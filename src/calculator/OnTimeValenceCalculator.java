@@ -101,7 +101,7 @@ public class OnTimeValenceCalculator {
 				route = new BusRoute(Integer.parseInt(strings[0]), Integer.parseInt(strings[1]), Integer.parseInt(strings[2]));
 				routeList.add(route);
 			} catch (NumberFormatException e) {
-				System.err.println("This bus route doesn't contain numbers." + route);
+				System.err.println("This bus route doesn't contain numbers. " + strings[0]);
 			}
 		}
 		return routeList;
