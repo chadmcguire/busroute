@@ -52,7 +52,7 @@ public class BusRoute {
 	 * @param expected
 	 */
 	public void calculate(Double expected){
-		setValence(-100d*((getMinutesEarlyLate() - expected)/expected));
+		setValence(-1000d*((getMinutesEarlyLate() - expected)/expected));
 	}
 	
 	
