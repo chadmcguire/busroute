@@ -37,6 +37,8 @@ public class OnTimeValenceCalculatorTest {
 		routeList.add(new BusRoute(3, 20, -4));
 		routeList.add(new BusRoute(3, 10, 5));
 		routeList.add(new BusRoute(1, 10, 5));
+		routeList.add(new BusRoute(1, 10, 3));
+		routeList.add(new BusRoute(1, 10, 9));
 		
 		OnTimeValenceCalculator calc = new OnTimeValenceCalculator();
 		HashMap<Integer, ArrayList<BusRoute>> sortedList = calc.sortRoutes(routeList);
