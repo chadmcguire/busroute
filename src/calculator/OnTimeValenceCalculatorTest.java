@@ -44,7 +44,7 @@ public class OnTimeValenceCalculatorTest {
 		HashMap<Integer, ArrayList<BusRoute>> sortedList = calc.sortRoutes(routeList);
 		
 		//Should have 4 entries for route 1
-		assertTrue(4 == sortedList.get(1).size());
+		assertTrue(6 == sortedList.get(1).size());
 		//Should have 3 entries for route 2
 		assertTrue(3 == sortedList.get(2).size());
 		//Should have 2 entries for route 3
