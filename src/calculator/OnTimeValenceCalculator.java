@@ -33,7 +33,7 @@ public class OnTimeValenceCalculator {
 	 * @return
 	 */
 	protected ArrayList<String> importCSV(String fileName){
-		ArrayList<String> routeList = new ArrayList<>();
+		ArrayList<String> routeList = new ArrayList<String>();
 		BufferedReader buffer = null;
 		try {
 			String line = "";
@@ -88,7 +88,7 @@ public class OnTimeValenceCalculator {
 	 * @return
 	 */
 	protected ArrayList<BusRoute> parseCSVData(ArrayList<String> stringList){
-		ArrayList<BusRoute> routeList = new ArrayList<>();
+		ArrayList<BusRoute> routeList = new ArrayList<String>();
 		for (String line : stringList) {
 			String[] strings = line.split(",");
 			BusRoute route = null;
