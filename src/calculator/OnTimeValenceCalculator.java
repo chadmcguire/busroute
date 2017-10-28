@@ -13,7 +13,7 @@ public class OnTimeValenceCalculator {
 	
 	public static void main(String[] args){
 		OnTimeValenceCalculator calc = new OnTimeValenceCalculator();
-		ArrayList<String> importList = calc.importCSV("/home/chad/Downloads/BusRoutes.csv");
+		ArrayList<String> importList = calc.importCSV(args[0]);
 		ArrayList<BusRoute> routes = calc.parseCSVData(importList);
 		HashMap<Integer, ArrayList<BusRoute>> sortedList = calc.sortRoutes(routes);
 		
